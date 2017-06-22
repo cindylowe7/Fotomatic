@@ -29,7 +29,7 @@ html {
   max-width: 100%;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1024px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -48,9 +48,7 @@ header {
 header .content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px 30px;
-  height: 85px;
+  padding: 1.875rem;
 }
 
 header .logo {
@@ -81,7 +79,29 @@ header .mobile {
   display: none;
 }
 
+/*@media only screen and (min-width: 760px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 1024px) {
+ header .desktop {
+   display: block;
+ }
+
+ header .mobile {
+   display: none;
+ }
+}*/
+
 @media only screen and (max-width: 760px) {
+
   header .desktop {
     display: none;
   }
@@ -113,6 +133,7 @@ header .mobile {
     color: white;
   }
 }
+
 
 /* Sign Up Section */
 
@@ -177,7 +198,7 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1024px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -197,7 +218,7 @@ header .mobile {
   }
 
   #sign-up-cta .email {
-    /*display: none;*/
+    display: none;
   }
 
   #sign-up-cta h1 {
@@ -237,21 +258,23 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
-  height: 635px;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 32px 32px 40px 32px;
+  margin: 0 auto;
+}
+
+.feature .content {
+  padding: 2.5rem 0;
 }
 
 .feature h2 {
   padding-bottom: .5rem;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
-  line-height: 1.2;
   }
 
 .feature h3 {
@@ -285,6 +308,10 @@ header .mobile {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
   }
+
+  .feature .content {
+    padding: 1.25rem 0 1.875rem 0;
+  }
 }
 
 /* Filters Section */
@@ -296,22 +323,19 @@ header .mobile {
 
 #filters-section .content {
   padding: 0 .625rem;
-  margin-top: 64px;
   margin-bottom: 80px;
 }
 
 #filters-section .content h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
   color: white;
-  opacity: 100%;
-  line-height: 1.6;
 }
 
 #filters-section .content h3 {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.4;
-  font-weight: 100;
+  font-weight: 300;
   color: white;
 }
 
@@ -355,40 +379,36 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
 #quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
